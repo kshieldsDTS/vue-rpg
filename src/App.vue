@@ -3,7 +3,7 @@
   <NarrativeContainer />
   <InventoryMenu />
   <CharacterMenu />
-  <PartyStatus />
+  <PartyStatus :party='party' />
 </template>
 
 <script>
@@ -22,6 +22,14 @@ export default {
     InventoryMenu,
     CharacterMenu,
     PartyStatus
+  },
+  data() {
+    return {
+      party: [{
+        name: 'Main Character',
+        class: 'Generic Class',
+      }]
+    }
   }
 }
 </script>
