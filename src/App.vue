@@ -1,18 +1,21 @@
 <template>
   <NavBar />
   <NarrativeContainer />
+  <InventoryMenu />
 </template>
 
 <script>
 // Imports
 import NavBar from './components/NavBar.vue'
 import NarrativeContainer from './components/NarrativeContainer.vue'
+import InventoryMenu from './components/InventoryMenu.vue'
 
 export default {
   name: 'App',
   components: {
     NavBar,
-    NarrativeContainer
+    NarrativeContainer,
+    InventoryMenu
   }
 }
 </script>
