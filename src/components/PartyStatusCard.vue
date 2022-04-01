@@ -1,10 +1,13 @@
 <template>
-  <p>Hello from Party Status Card</p>
+  <p>{{character.name}} the {{character.class}}</p>
 </template>
 
 <script>
 export default {
-    name: 'PartyStatusCard'
+    name: 'PartyStatusCard',
+    props: {
+        character: Object
+    }
 }
 </script>
 

@@ -1,6 +1,9 @@
 <template>
   <p>Hello from PartyStatus</p>
-  <PartyStatusCard />
+  <div :key='character.id' v-for='character in party'>
+    <PartyStatusCard :character='character'/>
+  </div>
+ 
 </template>
 
 <script>

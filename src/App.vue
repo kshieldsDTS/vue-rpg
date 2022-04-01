@@ -25,10 +25,18 @@ export default {
   },
   data() {
     return {
-      party: [{
-        name: 'Main Character',
-        class: 'Generic Class',
-      }]
+      party: [
+        {
+          id: 0,
+          name: 'Main Character',
+          class: 'Generic Class',
+        },
+        {
+          id: 1,
+          name: 'Second Character',
+          class: 'Other Class',
+        }
+      ]
     }
   }
 }
