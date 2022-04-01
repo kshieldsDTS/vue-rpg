@@ -3,6 +3,7 @@
   <NarrativeContainer />
   <InventoryMenu />
   <CharacterMenu />
+  <PartyStatus />
 </template>
 
 <script>
@@ -11,6 +12,7 @@ import NavBar from './components/NavBar.vue'
 import NarrativeContainer from './components/NarrativeContainer.vue'
 import InventoryMenu from './components/InventoryMenu.vue'
 import CharacterMenu from './components/CharacterMenu.vue'
+import PartyStatus from './components/PartyStatus.vue'
 
 export default {
   name: 'App',
@@ -18,7 +20,8 @@ export default {
     NavBar,
     NarrativeContainer,
     InventoryMenu,
-    CharacterMenu
+    CharacterMenu,
+    PartyStatus
   }
 }
 </script>
