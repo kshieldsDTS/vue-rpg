@@ -2,6 +2,7 @@
   <NavBar />
   <NarrativeContainer />
   <InventoryMenu />
+  <CharacterMenu />
 </template>
 
 <script>
@@ -9,13 +10,15 @@
 import NavBar from './components/NavBar.vue'
 import NarrativeContainer from './components/NarrativeContainer.vue'
 import InventoryMenu from './components/InventoryMenu.vue'
+import CharacterMenu from './components/CharacterMenu.vue'
 
 export default {
   name: 'App',
   components: {
     NavBar,
     NarrativeContainer,
-    InventoryMenu
+    InventoryMenu,
+    CharacterMenu
   }
 }
 </script>
