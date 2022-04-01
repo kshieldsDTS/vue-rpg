@@ -1,5 +1,6 @@
 <template>
-  <p>{{character.name}} the {{character.class}}</p>
+  <p>{{character.name}}</p>
+  <p>{{character.class}}</p>
 </template>
 
 <script>

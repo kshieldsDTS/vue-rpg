@@ -28,13 +28,23 @@ export default {
       party: [
         {
           id: 0,
-          name: 'Main Character',
-          class: 'Generic Class',
+          name: 'Valdyr',
+          class: 'Myrmidon',
         },
         {
           id: 1,
-          name: 'Second Character',
-          class: 'Other Class',
+          name: 'Zaakia',
+          class: 'Berserker',
+        },
+        {
+          id: 2,
+          name: 'Valysra',
+          class: 'Assassin',
+        },
+        {
+          id: 3,
+          name: 'Anders',
+          class: 'Cleric',
         }
       ]
     }

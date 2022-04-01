@@ -1,9 +1,9 @@
 <template>
-  <p>Hello from PartyStatus</p>
-  <div :key='character.id' v-for='character in party'>
+  <div class='party-bar'>
+     <div class='character' :key='character.id' v-for='character in party'>
     <PartyStatusCard :character='character'/>
+    </div>
   </div>
- 
 </template>
 
 <script>
@@ -20,6 +20,16 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.party-bar {
+  color: white;
+  background: blue;
+  display: flex;
+}
+.character {
+  flex-basis: 25%;
+  text-align: left;
+  padding-left: 1em;
+  padding-right: 1em;
+}
 </style>
