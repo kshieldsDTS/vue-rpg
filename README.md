@@ -37,6 +37,7 @@ My first attempt to build a Vue application from scratch, pulling ideas from my 
   - Save file system on DB with authentication
 
 ## Additional Features
+- Hotkeys for Navigation, Inventory, Equipment, etc...
 - GUI for visualizing enemies and the environment
 - Sound effects for combat, narrative
 - Crafting system
