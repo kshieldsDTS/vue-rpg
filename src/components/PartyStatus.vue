@@ -28,8 +28,5 @@ export default {
 }
 .character {
   flex-basis: 25%;
-  text-align: left;
-  padding-left: 1em;
-  padding-right: 1em;
 }
 </style>

@@ -29,22 +29,30 @@ export default {
         {
           id: 0,
           name: 'Valdyr',
-          class: 'Myrmidon',
+          class: 'Monk',
+          maxHP: 20,
+          currentHP: 18,
         },
         {
           id: 1,
           name: 'Zaakia',
           class: 'Berserker',
+          maxHP: 25,
+          currentHP: 15,
         },
         {
           id: 2,
           name: 'Valysra',
           class: 'Assassin',
+          maxHP: 18,
+          currentHP: 18,
         },
         {
           id: 3,
           name: 'Anders',
           class: 'Cleric',
+          maxHP: 16,
+          currentHP: 16,
         }
       ]
     }
