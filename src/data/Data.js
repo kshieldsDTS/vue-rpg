@@ -6,6 +6,9 @@ const data = [
         prompt: true,
         promptType: 'charName'
     },
+    {
+        id: 1,
+    }
 ]
 
 export default data
