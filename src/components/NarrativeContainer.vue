@@ -1,11 +1,19 @@
 <template>
-    <p>Hello from Narrative Container</p>
+    <p>{{Data[0].text}}</p>
 </template>
 
 <script>
+import Data from '../data/Data'
+
 export default {
-    name: 'NarrativeContainer'
+    name: 'NarrativeContainer',
+    data() {
+        return {
+            Data
+        }
+    }
 }
+
 </script>
 
 <style>
