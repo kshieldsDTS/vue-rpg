@@ -1,7 +1,7 @@
 <template>
   <main>
     <NavBar />
-    <NarrativeContainer @add-party-member='addPartyMember'/>
+    <NarrativeContainer />
     <InventoryMenu />
     <CharacterMenu />
     <PartyStatus :party='party' />
@@ -30,11 +30,11 @@ export default {
       party: []
     }
   },
-  methods: {
-    addPartyMember(newMember) {
-      this.party = [...this.party, newMember]
-    }
-  }
+  // methods: {
+  //   addPartyMember(newMember) {
+  //     this.party = [...this.party, newMember]
+  //   }
+  // }
 }
 </script>
 
