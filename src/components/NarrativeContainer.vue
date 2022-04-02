@@ -34,6 +34,7 @@ export default {
                     id: 0,
                     name: this.prompt
                 }
+                localStorage.setItem('charName', this.prompt)
                 this.$emit('add-party-member', newMember)
             }
             this.$emit('incrementID', this.id+1)
