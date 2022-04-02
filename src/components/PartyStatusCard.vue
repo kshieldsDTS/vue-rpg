@@ -37,7 +37,7 @@ export default {
     width: var(--width);
     height: 5px;
     background-color: rgb(var(--red), var(--green), 0);
-    filter: brightness(150%);
+    filter: brightness(180%);
     z-index: 2;
 }
 p {

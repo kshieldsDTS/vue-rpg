@@ -1,9 +1,11 @@
 <template>
-  <NavBar />
-  <NarrativeContainer />
-  <InventoryMenu />
-  <CharacterMenu />
-  <PartyStatus :party='party' />
+  <main>
+    <NavBar />
+    <NarrativeContainer />
+    <InventoryMenu />
+    <CharacterMenu />
+    <PartyStatus :party='party' />
+  </main>
 </template>
 
 <script>
@@ -25,36 +27,7 @@ export default {
   },
   data() {
     return {
-      party: [
-        {
-          id: 0,
-          name: 'Valdyr',
-          class: 'Monk',
-          maxHP: 20,
-          currentHP: 10,
-        },
-        {
-          id: 1,
-          name: 'Zaakia',
-          class: 'Berserker',
-          maxHP: 25,
-          currentHP: 5,
-        },
-        {
-          id: 2,
-          name: 'Valysra',
-          class: 'Assassin',
-          maxHP: 18,
-          currentHP: 9,
-        },
-        {
-          id: 3,
-          name: 'Anders',
-          class: 'Cleric',
-          maxHP: 16,
-          currentHP: 16,
-        }
-      ]
+      party: []
     }
   }
 }
@@ -68,5 +41,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+main {
+  height: 100%;
+  width: 100%;
 }
 </style>
