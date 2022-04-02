@@ -1,6 +1,5 @@
 <template>
-    <!-- <progress :class="[(character.currentHP/character.maxHP) > 0.75 ? 'hp-bar-green' : 'hp-bar-red']" :value="character.currentHP" :max='character.maxHP'></progress> -->
-    <div class="hp-bar-current" :style="{width: (character.currentHP/character.maxHP)}"></div>
+    <div class="hp-bar-current" :style="hpVars"></div>
     <div class="hp-bar-max"></div>
     <p>{{character.currentHP}}/{{character.maxHP}} HP</p>
     <p>{{character.name}}</p>
@@ -12,26 +11,33 @@ export default {
     name: 'PartyStatusCard',
     props: {
         character: Object
+    },
+    computed: {
+        hpVars() {
+            return {
+                '--width': `${(this.character.currentHP/this.character.maxHP)*24.4}%`,
+                '--green': `${(this.character.currentHP/this.character.maxHP)*255}`,
+                '--red': `${Math.abs((this.character.currentHP/this.character.maxHP)*255-255)}`
+            }
+        }
     }
 }
 </script>
 
 <style scoped>
-/* progress {
-    width: 100%
-} */
 .hp-bar-max {
     position: absolute;
-    width: 25%;
+    width: 24.4%;
     height: 5px;
-    background-color: #777;
+    background-color: #444;
     z-index: 1;
 }
 .hp-bar-current {
     position: absolute;
-    width: 25%;
+    width: var(--width);
     height: 5px;
-    background-color: green;
+    background-color: rgb(var(--red), var(--green), 0);
+    filter: brightness(180%);
     z-index: 2;
 }
 p {
