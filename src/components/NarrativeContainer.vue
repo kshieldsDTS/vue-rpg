@@ -2,7 +2,7 @@
     <div class='narrative-container'>
         <p>{{Data[0].text}}</p>
         <p>{{Data[0].text2}}</p>
-        <form>
+        <form @submit.prevent='onSubmit'>
             <input :class="Data[0].prompt ? 'prompt' : 'hidden'" type='text' />
             <input type='submit'/>
         </form>
@@ -14,9 +14,19 @@ import Data from '../data/Data'
 
 export default {
     name: 'NarrativeContainer',
+    props: {
+        id: Number
+    },
     data() {
         return {
-            Data
+            Data,
+            prompt: '',
+        }
+    },
+    methods: {
+        onSubmit() {
+            console.log(this.id);
+            this.$emit('incrementID', this.id+1)
         }
     }
 }

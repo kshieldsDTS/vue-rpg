@@ -1,7 +1,8 @@
 <template>
   <main>
+    {{id}}
     <NavBar />
-    <NarrativeContainer />
+    <NarrativeContainer :id='id' @incrementID='incrementID'/>
     <InventoryMenu />
     <CharacterMenu />
     <PartyStatus :party='party' />
@@ -27,14 +28,18 @@ export default {
   },
   data() {
     return {
-      party: []
+      party: [],
+      id: 0
     }
   },
-  // methods: {
-  //   addPartyMember(newMember) {
-  //     this.party = [...this.party, newMember]
-  //   }
-  // }
+  methods: {
+    addPartyMember(newMember) {
+      this.party = [...this.party, newMember]
+    },
+    incrementID() {
+      this.id = this.id+1
+    }
+  }
 }
 </script>
 
