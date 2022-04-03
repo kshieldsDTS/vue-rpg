@@ -1,8 +1,7 @@
 <template>
   <main>
-    {{id}}
     <NavBar />
-    <NarrativeContainer :id='id' @incrementID='incrementID'/>
+    <NarrativeContainer :id='id' @incrementID='incrementID' @add-party-member='addPartyMember'/>
     <InventoryMenu />
     <CharacterMenu />
     <PartyStatus :party='party' />

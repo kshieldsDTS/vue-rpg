@@ -1,11 +1,14 @@
 <template>
     <div class='narrative-container'>
-        <p>{{Data[0].text}}</p>
-        <p>{{Data[0].text2}}</p>
-        <form @submit.prevent='onSubmit'>
-            <input :class="Data[0].prompt ? 'prompt' : 'hidden'" type='text' />
+        <p>{{Data[id].text}}</p>
+        <p>{{Data[id].text2}}</p>
+        <form v-if='Data[id].prompt' @submit.prevent='onSubmit'>
+            <input v-model='prompt' type='text' />
             <input type='submit'/>
         </form>
+        <div v-if='Data[id].options'>
+            <button v-for='option in Data[id].options' :key='option.class'>{{option.class}}</button>
+        </div>
     </div>
 </template>
 
@@ -15,7 +18,7 @@ import Data from '../data/Data'
 export default {
     name: 'NarrativeContainer',
     props: {
-        id: Number
+        id: Number,
     },
     data() {
         return {
@@ -25,8 +28,20 @@ export default {
     },
     methods: {
         onSubmit() {
-            console.log(this.id);
+            if (!this.prompt) {
+                alert('Please fill in the prompt!')
+                return
+            }
+            if (Data[this.id].promptType === 'charName') {
+                const newMember = {
+                    id: 0,
+                    name: this.prompt
+                }
+                localStorage.setItem('charName', this.prompt)
+                this.$emit('add-party-member', newMember)
+            }
             this.$emit('incrementID', this.id+1)
+            
         }
     }
 }
