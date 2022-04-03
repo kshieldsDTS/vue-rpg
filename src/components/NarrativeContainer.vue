@@ -2,10 +2,13 @@
     <div class='narrative-container'>
         <p>{{Data[id].text}}</p>
         <p>{{Data[id].text2}}</p>
-        <form v-if='Data[0].prompt' @submit.prevent='onSubmit'>
+        <form v-if='Data[id].prompt' @submit.prevent='onSubmit'>
             <input v-model='prompt' type='text' />
             <input type='submit'/>
         </form>
+        <div v-if='Data[id].options'>
+            <button v-for='option in Data[id].options' :key='option.class'>{{option.class}}</button>
+        </div>
     </div>
 </template>
 
@@ -15,7 +18,7 @@ import Data from '../data/Data'
 export default {
     name: 'NarrativeContainer',
     props: {
-        id: Number
+        id: Number,
     },
     data() {
         return {
