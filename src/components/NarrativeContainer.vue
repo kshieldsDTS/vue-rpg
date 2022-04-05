@@ -6,8 +6,8 @@
             <input v-model='prompt' type='text' />
             <input type='submit'/>
         </form>
-        <div v-if='Data[id].options'>
-            <button v-for='option in Data[id].options' :key='option.class'>{{option.class}}</button>
+        <div class='options-container' v-if='Data[id].options'>
+            <button @click='selectOption' :class='option.class' v-for='option in Data[id].options' :key='option.class'>{{option.class}}</button>
         </div>
     </div>
 </template>
@@ -41,7 +41,9 @@ export default {
                 this.$emit('add-party-member', newMember)
             }
             this.$emit('incrementID', this.id+1)
-            
+        },
+        selectOption() {
+            console.log(object);
         }
     }
 }
