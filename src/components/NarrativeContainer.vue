@@ -43,7 +43,7 @@ export default {
             this.$emit('incrementID', this.id+1)
         },
         selectOption() {
-            console.log(object);
+            console.log(this.value);
         }
     }
 }
