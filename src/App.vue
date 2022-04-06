@@ -1,7 +1,10 @@
 <template>
   <main>
     <NavBar />
-    <NarrativeContainer :id='id' @incrementID='incrementID' @add-party-member='addPartyMember'/>
+    <NarrativeContainer :id='id' @change_id='changeID' @add-party-member='addPartyMember'
+    @mc_create='mcCreate'
+    :party='party'
+    />
     <InventoryMenu />
     <CharacterMenu />
     <PartyStatus :party='party' />
@@ -35,8 +38,11 @@ export default {
     addPartyMember(newMember) {
       this.party = [...this.party, newMember]
     },
-    incrementID() {
+    changeID() {
       this.id = this.id+1
+    },
+    mcCreate(mcCreate) {
+      this.party = [...this.party, mcCreate]
     }
   }
 }
@@ -53,6 +59,6 @@ export default {
 }
 main {
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
 }
 </style>

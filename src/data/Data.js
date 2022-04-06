@@ -4,7 +4,8 @@ const data = [
         text: 'Hello and welcome to Unnamed Vue RPG!',
         text2: 'To get started, enter your character name below!',
         prompt: true,
-        promptType: 'charName'
+        promptType: 'charName',
+        next: 1
     },
     {
         id: 1,
@@ -40,7 +41,8 @@ const data = [
                 hp: 12,
                 description: "A conduit for holy magic, the cleric can use the light to heal and support their allies or burn their foes in righteous fury."
             }
-        ]
+        ],
+        next: 2
     }
 ]
 

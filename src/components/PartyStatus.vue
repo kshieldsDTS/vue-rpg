@@ -28,6 +28,6 @@ export default {
 }
 .character {
   flex-basis: 25%;
-  border: 1px solid #555;
+  border: 1px solid #777;
 }
 </style>
