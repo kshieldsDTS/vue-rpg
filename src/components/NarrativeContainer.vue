@@ -1,7 +1,6 @@
 <template>
     <div class='narrative-container'>
-        <p>{{Data[id].text}}</p>
-        <p>{{Data[id].text2}}</p>
+        <p v-for='text in Data[id].text' :key='text'>{{text}}</p>
         <form v-if='Data[id].prompt' @submit.prevent='onSubmit'>
             <input v-model='prompt' type='text' />
             <input type='submit'/>
@@ -40,6 +39,7 @@ export default {
             this.$emit('change_id', this.Data[this.id].next);
         },
         selectOption(c, h) {
+            localStorage.setItem('mcClass', c)
             const mcCreate = {
                 name: localStorage.getItem('charName'),
                 class: c,
@@ -47,6 +47,7 @@ export default {
                 currentHP: h,
             }
             this.$emit('mc_create', mcCreate)
+            this.$emit('change_id', this.Data[this.id].next);
         }
     }
 }

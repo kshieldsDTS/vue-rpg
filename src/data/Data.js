@@ -1,15 +1,19 @@
 const data = [
     {
         id: 0,
-        text: 'Hello and welcome to Unnamed Vue RPG!',
-        text2: 'To get started, enter your character name below!',
+        text: [
+            'Hello and welcome to Unnamed Vue RPG!',
+            'To get started, enter your character name below!',
+        ],
         prompt: true,
         promptType: 'charName',
         next: 1
     },
     {
         id: 1,
-        text: 'What kind of adventurer are you?',
+        text: [
+            'What kind of adventurer are you?'
+        ],
         options: [
             {
                 class: 'Fighter',
@@ -43,7 +47,14 @@ const data = [
             }
         ],
         next: 2
-    }
+    },
+    {
+        id: 2,
+        text: [
+            `So you're ${localStorage.getItem('charName')}, eh?`,
+            'Nice to meet you!'
+        ],
+    },
 ]
 
 export default data
