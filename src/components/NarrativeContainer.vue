@@ -7,7 +7,8 @@
             <input type='submit'/>
         </form>
         <div class='options-container' v-if='Data[id].options'>
-            <button @click='selectOption' :class='option.class' v-for='option in Data[id].options' :key='option.class'>{{option.class}}</button>
+            <button 
+            @click='selectOption(option.class, option.hp)' :class='option.class' v-for='option in Data[id].options' :key='option.class'>{{option.class}}</button>
         </div>
     </div>
 </template>
@@ -19,6 +20,7 @@ export default {
     name: 'NarrativeContainer',
     props: {
         id: Number,
+        party: Array,
     },
     data() {
         return {
@@ -33,17 +35,18 @@ export default {
                 return
             }
             if (Data[this.id].promptType === 'charName') {
-                const newMember = {
-                    id: 0,
-                    name: this.prompt
-                }
                 localStorage.setItem('charName', this.prompt)
-                this.$emit('add-party-member', newMember)
             }
-            this.$emit('incrementID', this.id+1)
+            this.$emit('change_id', this.Data[this.id].next);
         },
-        selectOption() {
-            console.log(this.value);
+        selectOption(c, h) {
+            const mcCreate = {
+                name: localStorage.getItem('charName'),
+                class: c,
+                maxHP: h,
+                currentHP: h,
+            }
+            this.$emit('mc_create', mcCreate)
         }
     }
 }
