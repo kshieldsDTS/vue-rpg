@@ -89,6 +89,12 @@ const data = [
             'Nice to meet you!'
         ],
     },
+    {
+        id: 3,
+        text: [
+            `${localStorage.getItem('charName')} the ${localStorage.getItem('mcClass')}`
+        ]
+    }
 ]
 
 export default data
