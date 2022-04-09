@@ -88,12 +88,22 @@ const data = [
             `So you're ${localStorage.getItem('charName')}, eh?`,
             'Nice to meet you!'
         ],
+        next: 3,
     },
     {
         id: 3,
         text: [
-            `${localStorage.getItem('charName')} the ${localStorage.getItem('mcClass')}`
-        ]
+            `${localStorage.getItem('charName')} the ${localStorage.getItem('mcClass')}, eh?`,
+            `Strange things are afoot nowadays, I hope you're prepared!`
+        ],
+        next: 4,
+    },
+    {
+        id: 4,
+        text: [
+            "You will meet all sorts of characters and enemies on your journey."
+        ],
+        next: 5,
     }
 ]
 
