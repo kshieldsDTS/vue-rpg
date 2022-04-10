@@ -94,17 +94,20 @@ const data = [
         id: 3,
         text: [
             `${localStorage.getItem('charName')} the ${localStorage.getItem('mcClass')}, eh?`,
-            `Strange things are afoot nowadays, I hope you're prepared!`
+            `Strange things are afoot nowadays, I hope you're prepared!`,
+            `You will meet all sorts of characters and enemies on your journey in this strange land.`,
+            `Are you ready to begin?`
         ],
+        prompt: true,
         next: 4,
     },
     {
         id: 4,
         text: [
-            "You will meet all sorts of characters and enemies on your journey."
+            `You awaken in a damp, dark place. You rub the sleep out of your eyes, and your back feels sore from sleeping in a sitting position on the stone floor. Standing up, you can see the single door to this room, though cell might be a better defining word. A window stands opposite the door.`
         ],
         next: 5,
-    }
+    },
 ]
 
 export default data
