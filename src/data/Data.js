@@ -108,6 +108,13 @@ const data = [
         ],
         next: 5,
     },
+    {
+        id: 5,
+        text: [
+            `The door is made of a heavy wood, and is supported by iron along its edges and across the center. A small square section bound in iron stands at face level.`
+        ],
+        next: 6,
+    }
 ]
 
 export default data
