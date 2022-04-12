@@ -114,6 +114,14 @@ const data = [
             `The door is made of a heavy wood, and is supported by iron along its edges and across the center. A small square section bound in iron stands at face level.`
         ],
         next: 6,
+    },
+    {
+        id: 6,
+        text: [
+            `The window, little more than a foot high and wide, is lined with metal bars. It is slightly above your eye line, making it impossible to see outside.`,
+            `You can hear the sounds of waves crashing against the land. You are near a the ocean, as best as you can tell.`
+        ],
+        next: 7,
     }
 ]
 
