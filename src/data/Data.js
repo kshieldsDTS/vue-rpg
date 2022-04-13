@@ -122,6 +122,13 @@ const data = [
             `You can hear the sounds of waves crashing against the land. You are near a the ocean, as best as you can tell.`
         ],
         next: 7,
+    },
+    {
+        id: 7,
+        text: [
+            `Inspecting the meager bedding, you find a single metal pick with a piece of parchment wrapped around it.`
+        ],
+        next: 8
     }
 ]
 
