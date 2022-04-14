@@ -129,6 +129,15 @@ const data = [
             `Inspecting the meager bedding, you find a single metal pick with a piece of parchment wrapped around it.`
         ],
         next: 8
+    },
+    {
+        id: 8,
+        text: [
+            `The parchment reads:`,
+            `I know you're probably confused right now, but that's to be expected. All you need to know is you need to get out of here.`,
+            `Only after you finish reading the parchment do you realize it is penned in your own handwriting.`
+        ],
+        next: 9
     }
 ]
 
