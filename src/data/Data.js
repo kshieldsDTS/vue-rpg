@@ -138,6 +138,14 @@ const data = [
             `Only after you finish reading the parchment do you realize it is penned in your own handwriting.`
         ],
         next: 9
+    },
+    {
+        id: 9,
+        text: [
+            `You place the metal pick into a small opening in the door. It takes a moment, but you get a feel for the internal workings.`,
+            `Before long, you hear a satisfying click. You have unlocked the door.`
+        ],
+        next: 10,
     }
 ]
 
