@@ -5,7 +5,7 @@ My first attempt to build a Vue application from scratch, pulling ideas from my 
 
 ## Planned Features 
 - Main Character
-  - Customizable Name
+  - Customizable Name (Complete)
   - Customizable Class
   - Customizable Abilities
   - Customizable Stats
