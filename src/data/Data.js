@@ -138,6 +138,21 @@ const data = [
             `Only after you finish reading the parchment do you realize it is penned in your own handwriting.`
         ],
         next: 9
+    },
+    {
+        id: 9,
+        text: [
+            `You place the metal pick into a small opening in the door. It takes a moment, but you get a feel for the internal workings.`,
+            `Before long, you hear a satisfying click. You have unlocked the door.`
+        ],
+        next: 10,
+    },
+    {
+        id: 10,
+        text: [
+            `You peek out from behind the door and see a hallway to either side. The hallway is lined with doors. To the left, the hallway curves to the right. To the right, the hallway curves to the left.`
+        ],
+        next: 11,
     }
 ]
 
