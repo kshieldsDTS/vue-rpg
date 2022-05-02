@@ -153,6 +153,13 @@ const data = [
             `You peek out from behind the door and see a hallway to either side. The hallway is lined with doors. To the left, the hallway curves to the right. To the right, the hallway curves to the left.`
         ],
         next: 11,
+    },
+    {
+        id: 11,
+        text: [
+            `You turn left down the hallway. You idly test some of the doors as you pass: they all appear to be locked. As the hallway curves, you can see a figure at the end of the hallway, clad in dark robes, fumbling at one of the doors.`
+        ],
+        next: 12,
     }
 ]
 
