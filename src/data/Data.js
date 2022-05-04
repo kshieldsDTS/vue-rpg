@@ -160,6 +160,14 @@ const data = [
             `You turn left down the hallway. You idly test some of the doors as you pass: they all appear to be locked. As the hallway curves, you can see a figure at the end of the hallway, clad in dark robes, fumbling at one of the doors.`
         ],
         next: 12,
+    },
+    {
+        id: 12,
+        text: [
+            `The figure turns as you approach. They pull back the hood on the robe to reveal a scarred female face with a shock of red hair, braided neatly to drape down her shoulder.`,
+            `"Oh, you're out already?" Guess I should've expected that. Let's get out of here!"`
+        ],
+        next: 13,
     }
 ]
 
