@@ -168,6 +168,13 @@ const data = [
             `"Oh, you're out already?" Guess I should've expected that. Let's get out of here!"`
         ],
         next: 13,
+    },
+    {
+        id: 13,
+        text: [
+            `You don't remember me? You must've really hit your head hard back there! No matter, it's time to go!`
+        ],
+        next: 14
     }
 ]
 
