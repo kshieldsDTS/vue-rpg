@@ -175,6 +175,15 @@ const data = [
             `You don't remember me? You must've really hit your head hard back there! No matter, it's time to go!`
         ],
         next: 14
+    },
+    {
+        id: 14,
+        text: [
+            `Okay, stand back from the wall there.`,
+            `She chants some arcane words that you do not understand, and a glowing energy forms in her hands.She releases the energy and demolishes a section of the wall.`,
+            `"Come on!", she says, and jumps out the window.`
+        ],
+        next: 15
     }
 ]
 
