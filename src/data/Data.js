@@ -184,6 +184,14 @@ const data = [
             `"Come on!", she says, and jumps out the window.`
         ],
         next: 15
+    },
+    {
+        id: 15,
+        text: [
+            `You plunge out the window, and feel the wind rush past you as you begin to fall. Then you feel as if something gently cradles you, slowing your fall.`,
+            `You glide slowly down onto the sand below. You turn and look back to the tower and see it must have been hundreds of feet tall.`
+        ],
+        next: 16
     }
 ]
 
