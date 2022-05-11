@@ -192,6 +192,13 @@ const data = [
             `You glide slowly down onto the sand below. You turn and look back to the tower and see it must have been hundreds of feet tall.`
         ],
         next: 16
+    }, 
+    {
+        id: 16,
+        text: [
+            `"Follow me!" your companion shouts as she darts across the beach into a copse of trees nearby.`
+        ],
+        next: 17
     }
 ]
 
