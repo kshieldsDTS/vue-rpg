@@ -199,6 +199,13 @@ const data = [
             `"Follow me!" your companion shouts as she darts across the beach into a copse of trees nearby.`
         ],
         next: 17
+    },
+    {
+        id: 17,
+        text: [
+            `Once you two are out of the immediate line of sight of the tower, your companion turns and looks you up and down.`,
+            `"You don't look too worse for the wear. I guess introductions are in order... again. I'm Zaakia, nice to meet you." She stretches out her hand to shake yours.`
+        ]
     }
 ]
 
