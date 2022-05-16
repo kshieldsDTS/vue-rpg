@@ -205,7 +205,15 @@ const data = [
         text: [
             `Once you two are out of the immediate line of sight of the tower, your companion turns and looks you up and down.`,
             `"You don't look too worse for the wear. I guess introductions are in order... again. I'm Zaakia, nice to meet you." She stretches out her hand to shake yours.`
-        ]
+        ],
+        next: 18
+    },
+    {
+        id: 18,
+        text: [
+            `"We need to stick together, it's gonna get pretty rough here in a bit. Get ready for a fight!"`
+        ],
+        next: 19
     }
 ]
 
