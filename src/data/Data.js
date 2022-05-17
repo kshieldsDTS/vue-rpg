@@ -204,16 +204,24 @@ const data = [
         id: 17,
         text: [
             `Once you two are out of the immediate line of sight of the tower, your companion turns and looks you up and down.`,
-            `"You don't look too worse for the wear. I guess introductions are in order... again. I'm Zaakia, nice to meet you." She stretches out her hand to shake yours.`
+            `"You don't look too worse for the wear. I guess introductions are in order... again. I'm Zaakia, nice to meet you." She stretches out her hand to shake yours.`,
+            `Zaakia has joined the party!`
         ],
         next: 18
     },
     {
         id: 18,
         text: [
-            `"We need to stick together, it's gonna get pretty rough here in a bit. Get ready for a fight!"`
+            `"We need to stick together, it's gonna get pretty rough here in a bit. Get ready for a fight!" She says as she darts deeper into the copse of trees.`
         ],
         next: 19
+    }, 
+    {
+        id: 19,
+        text: [
+            `You enter a small clearing and see a group of goblins around a campfire. They do not appear to have noticed you yet.`
+        ],
+        next: 20
     }
 ]
 
