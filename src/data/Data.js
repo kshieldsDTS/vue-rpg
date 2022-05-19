@@ -222,6 +222,14 @@ const data = [
             `You enter a small clearing and see a group of goblins around a campfire. They do not appear to have noticed you yet.`
         ],
         next: 20
+    },
+    {
+        id: 20,
+        text: [
+            `After the battle, Zaakia looks over to you.`,
+            `"Looks like you still haven't forgotten how to fight! I love watching you work!"`
+        ],
+        next: 21
     }
 ]
 
